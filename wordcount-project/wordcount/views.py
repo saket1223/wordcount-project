@@ -4,6 +4,9 @@ import operator
 
 def home(request):
     return render(request,'home.html',{'message':'Word Count'})
+def about(request):
+    return render(request,'about.html')
+
 
 def result(request):
     fulltext = request.GET["fulltext"]
