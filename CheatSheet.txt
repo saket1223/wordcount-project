@@ -1,0 +1,67 @@
+Use local git repository
+
+
+D:\DjangoProject>git init
+Initialized empty Git repository in D:/DjangoProject/.git/
+
+D:\DjangoProject>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        wordcount-project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\DjangoProject>git add -A
+
+D:\DjangoProject>git commit -m "My first commit"
+[master (root-commit) 8d06719] My first commit
+ 14 files changed, 198 insertions(+)
+ create mode 100644 wordcount-project/db.sqlite3
+ create mode 100644 wordcount-project/manage.py
+ create mode 100644 wordcount-project/templates/home.html
+ create mode 100644 wordcount-project/templates/result.html
+ create mode 100644 wordcount-project/wordcount/__init__.py
+ create mode 100644 wordcount-project/wordcount/__pycache__/__init__.cpython-36.pyc
+ create mode 100644 wordcount-project/wordcount/__pycache__/settings.cpython-36.pyc
+ create mode 100644 wordcount-project/wordcount/__pycache__/urls.cpython-36.pyc
+ create mode 100644 wordcount-project/wordcount/__pycache__/views.cpython-36.pyc
+ create mode 100644 wordcount-project/wordcount/__pycache__/wsgi.cpython-36.pyc
+ create mode 100644 wordcount-project/wordcount/settings.py
+ create mode 100644 wordcount-project/wordcount/urls.py
+ create mode 100644 wordcount-project/wordcount/views.py
+ create mode 100644 wordcount-project/wordcount/wsgi.py
+
+D:\DjangoProject>git add -A
+
+D:\DjangoProject>git status
+On branch master
+nothing to commit, working tree clean
+
+#Add this git project to Github repository --> First create new repository on github site
+#echo "# wordcount-project" >> README.md
+#git init
+#git add README.md
+#git commit -m "first commit"
+#git remote add origin https://github.com/saket1223/wordcount-project.git
+#git push -u origin master
+
+D:\DjangoProject>git remote add origin https://github.com/saket1223/wordcount-project.git
+
+D:\DjangoProject>git push -u origin master
+git: 'credential-credential-store' is not a git command. See 'git --help'.
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (19/19), 5.79 KiB | 269.00 KiB/s, done.
+Total 19 (delta 0), reused 0 (delta 0)
+To https://github.com/saket1223/wordcount-project.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+D:\DjangoProject>
