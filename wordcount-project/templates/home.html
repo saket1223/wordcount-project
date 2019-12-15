@@ -1,0 +1,9 @@
+<h1>{{ message }}</h1>
+<div>
+    <form action="{% url 'result' %}" >
+
+        <div><textarea cols="40" rows="4" name="fulltext"></textarea></div>
+        <br/>
+        <div><input type="submit" name="save" value="Save" /></div>
+    </form>
+</div>
